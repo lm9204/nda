@@ -2,7 +2,7 @@
 
 
 
-개발언어: React, Node, TypeScript, CSS, SASS, HTML (ES6)
+개발언어: React, Next, Node, TypeScript, CSS, SASS, HTML (ES6)
 
 데이터베이스: MongoDB, MySQL
 
