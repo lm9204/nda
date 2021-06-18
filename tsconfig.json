@@ -9,6 +9,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
+    //"declaration": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -16,7 +17,17 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "inlineSourceMap": true,
+    "baseUrl": ".",
+    "paths": { 
+      "@api/*": ["pages/api/*"], 
+      "@hooks/*": ["utils/hooks/*"], 
+      "@components/*": ["components/*"], 
+      "@styles/*": ["styles/*"], 
+      "@utils/*": ["utils/*"], 
+      "@pages/*": ["pages/*"],
+      }
   },
   "include": [
     "next-env.d.ts",
