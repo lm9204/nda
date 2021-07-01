@@ -27,12 +27,13 @@
       "@styles/*": ["styles/*"], 
       "@utils/*": ["utils/*"], 
       "@pages/*": ["pages/*"],
+      "@models/*":["models/*"],
       }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
   ],
   "exclude": [
     "node_modules"
