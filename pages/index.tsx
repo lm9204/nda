@@ -5,7 +5,6 @@ import dbConnect from '@utils/mongodb';
 import sample from '@models/grade';
 
 import { GetServerSideProps } from 'next'
-import { resourceUsage } from 'process';
 
 export default function Home({ result }) {
   return (
