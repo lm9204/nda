@@ -5,7 +5,6 @@ import dbConnect from '@utils/mongodb';
 import sample from '@models/grade';
 
 import { GetServerSideProps } from 'next'
-import { resourceUsage } from 'process';
 
 export default function Home({ result }) {
   return (
@@ -20,20 +19,20 @@ export default function Home({ result }) {
 }
 
 
-export const getServerSideProps: GetServerSideProps =  async (context) => {
+// export const getServerSideProps: GetServerSideProps =  async (context) => {
 
-  const conn = await dbConnect()
+//   const conn = await dbConnect()
 
-  //sample data
+//   //sample data
 
-  const result = await sample.findOne({}).lean()
-  result._id = result._id.toString()
+//   const result = await sample.findOne({}).lean()
+//   result._id = result._id.toString()
 
-  //console.log(result)
+//   //console.log(result)
 
-  return { 
-    props: { 
-      result : result
-    } 
-  }
-}
+//   return { 
+//     props: { 
+//       result : result
+//     } 
+//   }
+// }
